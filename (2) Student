@@ -1,0 +1,25 @@
+package tugas.pkg7.pkg8.pkg2;
+
+public class Student extends Person{
+    public static final String FRESHMAN = "Mahasiswa Baru";
+    public static final String SOPHOMORE = "Tahun Kedua";
+    public static final String JUNIOR = "Junior";
+    public static final String SENIOR = "Senior";
+
+    private String status;
+
+    public Student(String name, String address, String phone, String email, String status) {
+        super(name, address, phone, email);
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+       return "---------- Student -----------\n" +
+           "Nama: " + name + "\n" +
+           "Alamat: " + address + "\n" +
+           "Telepon: " + phone + "\n" +
+           "Email: " + email + "\n" +
+           "Status: " + status;
+    }
+}
