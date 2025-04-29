@@ -1,0 +1,28 @@
+package tugas.pkg7.pkg8.pkg2;
+
+public class Faculty extends Employee{
+     private String workingHours;
+    private String rank;
+
+    public Faculty(String name, String address, String phone, String email,
+                   String office, double salary, MyDate dateHired,
+                   String workingHours, String rank) {
+        super(name, address, phone, email, office, salary, dateHired);
+        this.workingHours = workingHours;
+        this.rank = rank;
+    }
+
+    @Override
+    public String toString() {
+        return "---------- Faculty ---------- \n" +
+           "Nama: " + name + "\n" +
+           "Alamat: " + address + "\n" +
+           "Telepon: " + phone + "\n" +
+           "Email: " + email + "\n" +
+           "Kantor: " + office + "\n" +
+           "Gaji: " + salary + "\n" +
+           "Tanggal Dipekerjakan: " + dateHired + "\n" +
+           "Jam Kerja: " + workingHours + "\n" +
+           "Pangkat: " + rank;
+    }
+}
