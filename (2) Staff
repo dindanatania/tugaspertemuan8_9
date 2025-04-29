@@ -1,0 +1,25 @@
+package tugas.pkg7.pkg8.pkg2;
+
+public class Staff extends Employee{
+    private String title;
+
+    public Staff(String name, String address, String phone, String email,
+                 String office, double salary, MyDate dateHired,
+                 String title) {
+        super(name, address, phone, email, office, salary, dateHired);
+        this.title = title;
+    }
+
+    @Override
+    public String toString() {
+        return "---------- Staff ---------- \n" +
+           "Nama: " + name + "\n" +
+           "Alamat: " + address + "\n" +
+           "Telepon: " + phone + "\n" +
+           "Email: " + email + "\n" +
+           "Kantor: " + office + "\n" +
+           "Gaji: " + salary + "\n" +
+           "Tanggal Dipekerjakan: " + dateHired + "\n" +
+           "Gelar: " + title;
+    }
+}
