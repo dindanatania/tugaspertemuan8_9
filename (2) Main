@@ -1,0 +1,23 @@
+package tugas.pkg7.pkg8.pkg2;
+
+public class Tugas782 {
+    public static void main(String[] args) {
+        Person p = new Person("Dinda", "Bandungi", "0812345678", 
+                "dinda@gmail.com");
+        Student s = new Student("Nadiva", "Jakarta", "08234567890", 
+                "nadiva@gmail.com", Student.JUNIOR);
+        Employee e = new Employee("Nizam", "Surabaya", "08345678901", 
+                "nizam@gmail.com", "Ruang 101", 5000000, new MyDate(1, 4, 2020));
+        Faculty f = new Faculty("Yuki", "Yogyakarta", "08456789012", 
+                "yuki@gmail.com", "Ruang 102", 7000000, new MyDate(15, 3, 2019), 
+                "08:00 - 16:00", "Dekan");
+        Staff st = new Staff("Bembi", "Medan", "08567890123", "bembi@gmail.com", 
+                "Ruang 103", 4000000, new MyDate(10, 1, 2021), "Administrasi");
+
+        System.out.println(p.toString());
+        System.out.println(s.toString());
+        System.out.println(e.toString());
+        System.out.println(f.toString());
+        System.out.println(st.toString());
+    }     
+}
